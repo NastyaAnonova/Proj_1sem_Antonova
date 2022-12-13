@@ -4,6 +4,7 @@ close = ["]", "}", ")"] # объявление вспомогательного 
 
 def Check(str): # объявление функции
     stack = [] # объявление вспомогательного массива
+    str = str.split()
     for i in str: # объявление цикла
         if i in open: 
             stack.append(i)
